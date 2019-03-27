@@ -26,7 +26,7 @@ public class FragmentActivityClass extends AppCompatActivity implements View.OnC
         setContentView(R.layout.activity_main);
 
         findViewById(R.id.fragment).setOnClickListener(this);
-        findViewById(R.id.button2).setOnClickListener(this);
+        findViewById(R.id.workmanager).setOnClickListener(this);
         findViewById(R.id.button3).setOnClickListener(this);
         findViewById(R.id.button4).setOnClickListener(this);
         findViewById(R.id.button5).setOnClickListener(this);
@@ -77,7 +77,7 @@ public class FragmentActivityClass extends AppCompatActivity implements View.OnC
                 addFragmentOne();
                 break;
 
-            case R.id.button2:
+            case R.id.workmanager:
                 addFragmentTwo();
                 break;
 

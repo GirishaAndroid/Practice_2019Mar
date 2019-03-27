@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import andorid.sample.practice_2019mar.fragment.sample.FragmentActivityClass;
+import andorid.sample.practice_2019mar.workmanager.sample.WorkManagerActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_mainui);
 
         findViewById(R.id.fragment).setOnClickListener(this);
+        findViewById(R.id.workmanager).setOnClickListener(this);
         //Fragment
 
     }
@@ -29,8 +31,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.fragment:
                 startFragmentSample();
                 break;
+            case R.id.workmanager:
+                startWorkManager();
+                break;
         }
 
+    }
+
+    private void startWorkManager() {
+        Intent intent = new Intent(this, WorkManagerActivity.class);
+        startActivity(intent);
     }
 
     private void startFragmentSample() {

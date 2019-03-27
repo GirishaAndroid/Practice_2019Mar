@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".fragment.sample.FragmentActivityClass" />
+        <activity android:name=".workmanager.sample.WorkManagerActivity" />
     </application>
 
 </manifest>
