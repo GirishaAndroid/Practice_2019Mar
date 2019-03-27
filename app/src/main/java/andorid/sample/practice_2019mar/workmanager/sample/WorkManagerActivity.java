@@ -20,6 +20,7 @@ public class WorkManagerActivity extends AppCompatActivity {
 
     TextView tv;
     OneTimeWorkRequest workRequest, workRequest2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,17 +63,19 @@ public class WorkManagerActivity extends AppCompatActivity {
         WorkManager.getInstance().getWorkInfoByIdLiveData(workRequest.getId())
                 .observe(this, new Observer<WorkInfo>() {
                     int i = 0;
+
                     @Override
                     public void onChanged(WorkInfo workInfo) {
-                        tv.append(" " +workInfo.getState().name()+" "+workInfo.getOutputData().getString("DATA")+" "+ i++);
+                        tv.append(" " + workInfo.getState().name() + " " + workInfo.getOutputData().getString("DATA") + " " + i++);
                     }
-      });
+                });
         WorkManager.getInstance().getWorkInfoByIdLiveData(workRequest2.getId())
                 .observe(this, new Observer<WorkInfo>() {
                     int i = 0;
+
                     @Override
                     public void onChanged(WorkInfo workInfo) {
-                        tv.append(" " +workInfo.getState().name()+" "+workInfo.getOutputData().getString("DATA")+" "+ i++);
+                        tv.append(" " + workInfo.getState().name() + " " + workInfo.getOutputData().getString("DATA") + " " + i++);
                     }
                 });
     }
