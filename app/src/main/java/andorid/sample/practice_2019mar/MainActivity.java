@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import andorid.sample.practice_2019mar.DataBindingSample.ProductUI;
 import andorid.sample.practice_2019mar.fragment.sample.FragmentActivityClass;
 import andorid.sample.practice_2019mar.workmanager.sample.WorkManagerActivity;
 
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.fragment).setOnClickListener(this);
         findViewById(R.id.workmanager).setOnClickListener(this);
+        findViewById(R.id.dadtabinding).setOnClickListener(this);
         //Fragment
 
     }
@@ -34,7 +36,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.workmanager:
                 startWorkManager();
                 break;
+            case R.id.dadtabinding:
+                startDataBinding();
+                break;
         }
+
+    }
+
+    private void startDataBinding() {
+        Intent intent = new Intent(this, ProductUI.class);
+        startActivity(intent);
 
     }
 
