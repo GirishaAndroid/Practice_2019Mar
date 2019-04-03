@@ -1,9 +1,8 @@
-package andorid.sample.practice_2019mar.DataBindingSample.model;
+package andorid.sample.practice_2019mar.databindingsample.model;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
 
-import andorid.sample.practice_2019mar.DataBindingSample.model.Product;
 import andorid.sample.practice_2019mar.R;
 
 public class Products {

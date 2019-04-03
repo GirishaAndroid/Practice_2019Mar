@@ -1,4 +1,4 @@
-package andorid.sample.practice_2019mar.DataBindingSample.utils;
+package andorid.sample.practice_2019mar.databindingsample.utils;
 
 public class StringUtils {
 

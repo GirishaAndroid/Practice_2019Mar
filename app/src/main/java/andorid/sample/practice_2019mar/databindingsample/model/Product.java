@@ -1,4 +1,4 @@
-package andorid.sample.practice_2019mar.DataBindingSample.model;
+package andorid.sample.practice_2019mar.databindingsample.model;
 
 import java.math.BigDecimal;
 
@@ -106,5 +106,13 @@ public class Product {
 
     public void setSerial_number(int serial_number) {
         this.serial_number = serial_number;
+    }
+
+    public boolean hasSalePrice() {
+        double saleprice = sale_price.doubleValue();
+        if (saleprice > 0) {
+            return true;
+        } else
+            return false;
     }
 }

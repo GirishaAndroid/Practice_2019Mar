@@ -18,7 +18,7 @@
         </activity>
         <activity android:name=".fragment.sample.FragmentActivityClass" />
         <activity android:name=".workmanager.sample.WorkManagerActivity" />
-        <activity android:name=".DataBindingSample.ProductUI" />
+        <activity android:name=".databindingsample.ProductUI" />
     </application>
 
 </manifest>

@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import andorid.sample.practice_2019mar.DataBindingSample.ProductUI;
+import andorid.sample.practice_2019mar.databindingsample.ProductUI;
 import andorid.sample.practice_2019mar.fragment.sample.FragmentActivityClass;
 import andorid.sample.practice_2019mar.workmanager.sample.WorkManagerActivity;
 
