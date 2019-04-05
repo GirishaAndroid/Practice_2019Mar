@@ -8,7 +8,11 @@ import android.widget.Button;
 
 import andorid.sample.practice_2019mar.ArchComponent.JetPack.View.MovieListActivity;
 import andorid.sample.practice_2019mar.databindingsample.ProductUI;
+import andorid.sample.practice_2019mar.designPatterns.ViewClass;
 import andorid.sample.practice_2019mar.fragment.sample.FragmentActivityClass;
+import andorid.sample.practice_2019mar.threadCommunication.sample.join.ThreadsChannel;
+import andorid.sample.practice_2019mar.threadCommunication.sample.waitNotify.WaitDemo;
+import andorid.sample.practice_2019mar.threadCommunication.sample.yield.YeildDemo;
 import andorid.sample.practice_2019mar.workmanager.sample.WorkManagerActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -24,8 +28,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.workmanager).setOnClickListener(this);
         findViewById(R.id.dadtabinding).setOnClickListener(this);
         findViewById(R.id.arch_component).setOnClickListener(this);
+        findViewById(R.id.design_pattern).setOnClickListener(this);
         //Fragment
 
+        threadCommunicatio();
+    }
+
+    private void threadCommunicatio() {
+        ThreadsChannel threadsChannel = new ThreadsChannel();
+        threadsChannel.startThread1();
+        threadsChannel.startThread2();
+
+        YeildDemo yeildDemo = new YeildDemo();
+        yeildDemo.startThread();
+
+        WaitDemo waitDemo = new WaitDemo();
+        waitDemo.startDemo();
     }
 
     @Override
@@ -44,8 +62,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.arch_component:
                 startArchComp();
                 break;
+            case R.id.design_pattern:
+                startDesignPattern();
+                break;
         }
 
+    }
+
+    private void startDesignPattern() {
+        Intent intent = new Intent(this, ViewClass.class);
+        startActivity(intent);
     }
 
     private void startArchComp() {

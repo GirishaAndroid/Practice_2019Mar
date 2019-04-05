@@ -47,17 +47,17 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="ArchComp"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintEnd_toStartOf="@+id/design_pattern"
         app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fragment" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/design_pattern"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="64dp"
-        android:text="replace2"
+        android:text="DesignPattern"
         app:layout_constraintEnd_toStartOf="@+id/button6"
         app:layout_constraintTop_toBottomOf="@+id/workmanager" />
 
@@ -92,7 +92,7 @@
         android:layout_marginEnd="64dp"
         android:text="Button"
         app:layout_constraintEnd_toStartOf="@+id/button9"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/design_pattern" />
 
     <Button
         android:id="@+id/button9"
