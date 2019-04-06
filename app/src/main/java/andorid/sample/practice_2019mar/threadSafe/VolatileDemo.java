@@ -10,7 +10,7 @@ import android.util.Log;
 
 public class VolatileDemo {
 
-    private static  int MY_INT = 0;
+    private volatile static  int MY_INT = 0;
 
     static class ChangeListener extends Thread {
         @Override
