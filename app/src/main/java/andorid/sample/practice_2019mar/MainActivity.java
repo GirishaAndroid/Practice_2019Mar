@@ -13,7 +13,9 @@ import andorid.sample.practice_2019mar.fragment.sample.FragmentActivityClass;
 import andorid.sample.practice_2019mar.threadCommunication.sample.join.ThreadsChannel;
 import andorid.sample.practice_2019mar.threadCommunication.sample.waitNotify.WaitDemo;
 import andorid.sample.practice_2019mar.threadCommunication.sample.waitNotify.WaitDemo2;
+import andorid.sample.practice_2019mar.threadCommunication.sample.waitNotify.WaitDemo3;
 import andorid.sample.practice_2019mar.threadCommunication.sample.yield.YeildDemo;
+import andorid.sample.practice_2019mar.threadSafe.VolatileDemo;
 import andorid.sample.practice_2019mar.workmanager.sample.WorkManagerActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -48,6 +50,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         WaitDemo2 taskQue = new WaitDemo2();
         taskQue.TaskQue();
+
+        WaitDemo3 waitDemo3 = new WaitDemo3();
+        waitDemo3.startThread();
+
+        VolatileDemo volatileDemo = new VolatileDemo();
+        volatileDemo.startThread();
     }
 
     @Override
