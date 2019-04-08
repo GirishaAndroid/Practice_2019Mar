@@ -15,6 +15,7 @@ import andorid.sample.practice_2019mar.threadCommunication.sample.waitNotify.Wai
 import andorid.sample.practice_2019mar.threadCommunication.sample.waitNotify.WaitDemo2;
 import andorid.sample.practice_2019mar.threadCommunication.sample.waitNotify.WaitDemo3;
 import andorid.sample.practice_2019mar.threadCommunication.sample.yield.YeildDemo;
+import andorid.sample.practice_2019mar.threadSafe.SynchDemo3;
 import andorid.sample.practice_2019mar.threadSafe.VolatileDemo;
 import andorid.sample.practice_2019mar.workmanager.sample.WorkManagerActivity;
 
@@ -56,6 +57,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         VolatileDemo volatileDemo = new VolatileDemo();
         volatileDemo.startThread();
+
+        SynchDemo3 synchDemo3 = new SynchDemo3();
+        synchDemo3.startThred();
     }
 
     @Override
