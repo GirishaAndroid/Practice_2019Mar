@@ -3,62 +3,75 @@ package andorid.sample.practice_2019mar.ArchComponent.JetPack.Model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.List;
+
 public class MovieModel {
 
-    @SerializedName("id")
-    @Expose
-    private Integer id;
-    @SerializedName("name")
-    @Expose
-    private String name;
-    @SerializedName("year")
-    @Expose
-    private Integer year;
-    @SerializedName("color")
-    @Expose
-    private String color;
-    @SerializedName("pantone_value")
-    @Expose
-    private String pantoneValue;
-
-    public Integer getId() {
-        return id;
+    @SerializedName("data")
+    List<DataModel> data;
+    public List<DataModel> getMovieList() {
+        return data;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setMovieList(List<DataModel> data) {
+        this.data = data;
     }
 
-    public String getName() {
-        return name;
-    }
+    public class DataModel {
+        @SerializedName("id")
+        @Expose
+        private Integer id;
+        @SerializedName("name")
+        @Expose
+        private String name;
+        @SerializedName("year")
+        @Expose
+        private Integer year;
+        @SerializedName("color")
+        @Expose
+        private String color;
+        @SerializedName("pantone_value")
+        @Expose
+        private String pantoneValue;
 
-    public void setName(String name) {
-        this.name = name;
-    }
+        public Integer getId() {
+            return id;
+        }
 
-    public Integer getYear() {
-        return year;
-    }
+        public void setId(Integer id) {
+            this.id = id;
+        }
 
-    public void setYear(Integer year) {
-        this.year = year;
-    }
+        public String getName() {
+            return name;
+        }
 
-    public String getColor() {
-        return color;
-    }
+        public void setName(String name) {
+            this.name = name;
+        }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
+        public Integer getYear() {
+            return year;
+        }
 
-    public String getPantoneValue() {
-        return pantoneValue;
-    }
+        public void setYear(Integer year) {
+            this.year = year;
+        }
 
-    public void setPantoneValue(String pantoneValue) {
-        this.pantoneValue = pantoneValue;
-    }
+        public String getColor() {
+            return color;
+        }
 
+        public void setColor(String color) {
+            this.color = color;
+        }
+
+        public String getPantoneValue() {
+            return pantoneValue;
+        }
+
+        public void setPantoneValue(String pantoneValue) {
+            this.pantoneValue = pantoneValue;
+        }
+    }
 }
