@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import andorid.sample.practice_2019mar.R;
 import andorid.sample.practice_2019mar.databinding.MovielistActivityBinding;
+//https://www.youtube.com/watch?v=GNN8BWZvXW8&t=241s
 
 public class MovieListActivity extends AppCompatActivity {
 
