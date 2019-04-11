@@ -72,6 +72,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Driver driver = new Driver();
         driver.buildCollege();
+
+        startActivity(new Intent(this, ViewClass.class));
     }
 
     @Override

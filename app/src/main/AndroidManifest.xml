@@ -23,6 +23,7 @@
         <activity android:name=".designPatterns.Demo.ObserverPattern.ViewClass"/>
         <activity android:name=".ParcelableDemo.GetParcelView"/>
         <activity android:name=".ParcelableDemo.PutParcelViewClass"/>
+        <activity android:name=".threadCommunication.sample.uiAndWorker.ViewClass"/>
     </application>
 
 </manifest>
