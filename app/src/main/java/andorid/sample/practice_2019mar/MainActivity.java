@@ -13,6 +13,7 @@ import andorid.sample.practice_2019mar.designPatterns.Demo.ObserverPattern.ViewC
 import andorid.sample.practice_2019mar.designPatterns.Demo.builderPattern.Driver;
 import andorid.sample.practice_2019mar.fragment.sample.FragmentActivityClass;
 import andorid.sample.practice_2019mar.threadCommunication.sample.join.ThreadsChannel;
+import andorid.sample.practice_2019mar.threadCommunication.sample.uiAndWorker.BackTaskUIClass;
 import andorid.sample.practice_2019mar.threadCommunication.sample.waitNotify.WaitDemo;
 import andorid.sample.practice_2019mar.threadCommunication.sample.waitNotify.WaitDemo2;
 import andorid.sample.practice_2019mar.threadCommunication.sample.waitNotify.WaitDemo3;
@@ -73,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Driver driver = new Driver();
         driver.buildCollege();
 
-        startActivity(new Intent(this, ViewClass.class));
+        startActivity(new Intent(this, BackTaskUIClass.class));
     }
 
     @Override
