@@ -1,4 +1,4 @@
-package andorid.sample.practice_2019mar.designPatterns;
+package andorid.sample.practice_2019mar.designPatterns.Demo.ObserverPattern;
 
 import android.util.Log;
 

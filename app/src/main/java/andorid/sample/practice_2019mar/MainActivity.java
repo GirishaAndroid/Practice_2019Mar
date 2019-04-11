@@ -9,7 +9,8 @@ import android.widget.Button;
 import andorid.sample.practice_2019mar.ArchComponent.JetPack.View.MovieListActivity;
 import andorid.sample.practice_2019mar.ParcelableDemo.PutParcelViewClass;
 import andorid.sample.practice_2019mar.databindingsample.ProductUI;
-import andorid.sample.practice_2019mar.designPatterns.ViewClass;
+import andorid.sample.practice_2019mar.designPatterns.Demo.ObserverPattern.ViewClass;
+import andorid.sample.practice_2019mar.designPatterns.Demo.builderPattern.Driver;
 import andorid.sample.practice_2019mar.fragment.sample.FragmentActivityClass;
 import andorid.sample.practice_2019mar.threadCommunication.sample.join.ThreadsChannel;
 import andorid.sample.practice_2019mar.threadCommunication.sample.waitNotify.WaitDemo;
@@ -68,6 +69,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Intent intent = new Intent(this, PutParcelViewClass.class);
         startActivity(intent);
+
+        Driver driver = new Driver();
+        driver.buildCollege();
     }
 
     @Override

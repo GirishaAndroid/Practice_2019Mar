@@ -20,7 +20,7 @@
         <activity android:name=".workmanager.sample.WorkManagerActivity" />
         <activity android:name=".databindingsample.ProductUI" />
         <activity android:name=".ArchComponent.JetPack.View.MovieListActivity"/>
-        <activity android:name=".designPatterns.ViewClass"/>
+        <activity android:name=".designPatterns.Demo.ObserverPattern.ViewClass"/>
         <activity android:name=".ParcelableDemo.GetParcelView"/>
         <activity android:name=".ParcelableDemo.PutParcelViewClass"/>
     </application>
