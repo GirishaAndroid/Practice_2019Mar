@@ -8,7 +8,6 @@ import android.widget.Toast;
 
 import andorid.sample.practice_2019mar.databindingsample.model.Product;
 import andorid.sample.practice_2019mar.databindingsample.model.Products;
-import andorid.sample.practice_2019mar.R;
 import andorid.sample.practice_2019mar.databinding.StudentUiBinding;
 
 //https://www.youtube.com/watch?v=v4XO_y3RErI&t=326s
