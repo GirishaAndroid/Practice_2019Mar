@@ -21,6 +21,7 @@ import andorid.sample.practice_2019mar.threadCommunication.sample.yield.YeildDem
 import andorid.sample.practice_2019mar.threadSafe.SynchClassLevel;
 import andorid.sample.practice_2019mar.threadSafe.SynchDemo3;
 import andorid.sample.practice_2019mar.threadSafe.VolatileDemo;
+import andorid.sample.practice_2019mar.unittest.demo.espresso.ui.test.TestActicity;
 import andorid.sample.practice_2019mar.workmanager.sample.WorkManagerActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -39,7 +40,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.design_pattern).setOnClickListener(this);
         //Fragment
 
-        threadCommunicatio();
+        //Uncomment below methods for checking concepts
+        // threadCommunicatio();
+        // parcelDemo();
+        espressoDemo();
+        // designPattern();
+    }
+
+    private void designPattern() {
+        Driver driver = new Driver();
+        driver.buildCollege();
+    }
+
+    private void parcelDemo() {
+        Intent intent = new Intent(this, PutParcelViewClass.class);
+        startActivity(intent);
+    }
+
+    private void espressoDemo() {
+        startActivity(new Intent(this, TestActicity.class));
     }
 
     private void threadCommunicatio() {
@@ -67,12 +86,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         SynchClassLevel synchClassLevel = new SynchClassLevel();
         synchClassLevel.startThred();
-
-        Intent intent = new Intent(this, PutParcelViewClass.class);
-        startActivity(intent);
-
-        Driver driver = new Driver();
-        driver.buildCollege();
 
         startActivity(new Intent(this, BackTaskUIClass.class));
     }
@@ -125,6 +138,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent(this, FragmentActivityClass.class);
         startActivity(intent);
     }
-
 
 }

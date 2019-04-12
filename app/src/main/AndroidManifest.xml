@@ -24,6 +24,8 @@
         <activity android:name=".ParcelableDemo.GetParcelView"/>
         <activity android:name=".ParcelableDemo.PutParcelViewClass"/>
         <activity android:name=".threadCommunication.sample.uiAndWorker.BackTaskUIClass"/>
+        <activity android:name=".unittest.demo.espresso.ui.test.TestActicity"/>
+        <activity android:name=".unittest.demo.mockito.api.test.MockitoDemoForAPITest"/>
     </application>
 
 </manifest>

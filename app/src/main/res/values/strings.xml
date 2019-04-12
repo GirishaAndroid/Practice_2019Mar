@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Practice_2019Mar</string>
+    <string name="number_empty">Number is empty</string>
+    <string name="toast_error">Number do not match. Plz try</string>
+    <string name="username_empty">Username is empty</string>
 </resources>

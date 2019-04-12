@@ -1,0 +1,35 @@
+package andorid.sample.practice_2019mar.unittest.demo.mockito.api.test;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import andorid.sample.practice_2019mar.R;
+
+public class MockitoDemoForAPITest extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.unittest_mockito_demo);
+
+        final EditText editText = findViewById(R.id.inEmail);
+        Button button = findViewById(R.id.button);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                boolean isValid = Utils.checkEmailForValidity(editText.getText().toString());
+
+                if (isValid) {
+                    Toast.makeText(getApplicationContext(), "Email is valid", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Email not valid", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+    }
+}
