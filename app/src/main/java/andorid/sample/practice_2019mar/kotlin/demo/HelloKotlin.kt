@@ -72,7 +72,6 @@ open class HelloKotlin : AppCompatActivity() {
         var (a, b) = obj
         println(a + b)
 
-
         //Singleton call
         var strData = SingletonDemo.primaNumber();
 
