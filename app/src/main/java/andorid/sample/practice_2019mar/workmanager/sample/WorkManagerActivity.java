@@ -6,9 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 import andorid.sample.practice_2019mar.R;
 import androidx.work.Constraints;
 import androidx.work.Data;
@@ -52,6 +49,7 @@ public class WorkManagerActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 WorkManager.getInstance().enqueue(workRequest);
+                //WorkManager.getInstance().enqueue(workRequest2);
                /* WorkManager.getInstance().beginWith(Arrays.asList(workRequest, workRequest2))
                         .enqueue();*/
 
