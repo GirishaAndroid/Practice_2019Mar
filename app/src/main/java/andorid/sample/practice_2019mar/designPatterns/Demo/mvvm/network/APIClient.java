@@ -1,6 +1,4 @@
-package andorid.sample.practice_2019mar.ArchComponent.JetPack.Network;
-
-import com.google.gson.Gson;
+package andorid.sample.practice_2019mar.designPatterns.Demo.mvvm.network;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

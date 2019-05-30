@@ -1,4 +1,4 @@
-package andorid.sample.practice_2019mar.ArchComponent.JetPack.View;
+package andorid.sample.practice_2019mar.designPatterns.Demo.mvvm.View;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;

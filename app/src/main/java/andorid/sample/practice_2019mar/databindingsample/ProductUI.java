@@ -37,9 +37,10 @@ public class ProductUI extends AppCompatActivity implements IProductUI {
         mBinding.setProductqt((IProductUI) this);
 
         //int pass to XML
-        //mBinding.setInt(1); add variable it xml with type int
+        //mBinding.setInt(1); add variable in xml with type int
 
         mBinding.setImageStr("https://i.redd.it/qd9auffis0q21.jpg");
+
 
     }
 

@@ -1,7 +1,6 @@
-package andorid.sample.practice_2019mar.ArchComponent.JetPack.View;
+package andorid.sample.practice_2019mar.designPatterns.Demo.mvvm.View;
 
 import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -12,8 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import andorid.sample.practice_2019mar.ArchComponent.JetPack.Model.MovieModel;
-import andorid.sample.practice_2019mar.ArchComponent.JetPack.viewmodel.MovieListViewModel;
+import andorid.sample.practice_2019mar.designPatterns.Demo.mvvm.model.MovieModel;
+import andorid.sample.practice_2019mar.designPatterns.Demo.mvvm.viewmodel.MovieListViewModel;
 import andorid.sample.practice_2019mar.R;
 import andorid.sample.practice_2019mar.databinding.MovielistUiBinding;
 

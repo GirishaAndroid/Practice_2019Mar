@@ -1,10 +1,10 @@
-package andorid.sample.practice_2019mar.ArchComponent.JetPack.viewmodel;
+package andorid.sample.practice_2019mar.designPatterns.Demo.mvvm.viewmodel;
 
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 
-import andorid.sample.practice_2019mar.ArchComponent.JetPack.Model.MovieModel;
-import andorid.sample.practice_2019mar.ArchComponent.JetPack.repository.MovieLisRepository;
+import andorid.sample.practice_2019mar.designPatterns.Demo.mvvm.model.MovieModel;
+import andorid.sample.practice_2019mar.designPatterns.Demo.mvvm.repository.MovieLisRepository;
 
 public class MovieListViewModel extends ViewModel {
 

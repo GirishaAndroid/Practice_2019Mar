@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import andorid.sample.practice_2019mar.ArchComponent.JetPack.View.MovieListActivity;
+import andorid.sample.practice_2019mar.designPatterns.Demo.mvvm.View.MovieListActivity;
 import andorid.sample.practice_2019mar.ParcelableDemo.PutParcelViewClass;
 import andorid.sample.practice_2019mar.databindingsample.ProductUI;
 import andorid.sample.practice_2019mar.designPatterns.Demo.ObserverPattern.ViewClass;

@@ -1,10 +1,10 @@
-package andorid.sample.practice_2019mar.ArchComponent.JetPack.repository;
+package andorid.sample.practice_2019mar.designPatterns.Demo.mvvm.repository;
 
 import android.arch.lifecycle.MutableLiveData;
 
-import andorid.sample.practice_2019mar.ArchComponent.JetPack.Model.MovieModel;
-import andorid.sample.practice_2019mar.ArchComponent.JetPack.Network.APIClient;
-import andorid.sample.practice_2019mar.ArchComponent.JetPack.Network.APInterface;
+import andorid.sample.practice_2019mar.designPatterns.Demo.mvvm.model.MovieModel;
+import andorid.sample.practice_2019mar.designPatterns.Demo.mvvm.network.APIClient;
+import andorid.sample.practice_2019mar.designPatterns.Demo.mvvm.network.APInterface;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

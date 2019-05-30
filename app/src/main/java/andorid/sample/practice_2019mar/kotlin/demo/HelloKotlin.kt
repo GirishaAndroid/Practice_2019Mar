@@ -5,6 +5,7 @@ import android.os.PersistableBundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 
+//https://www.programiz.com/kotlin-programming
 //https://www.journaldev.com/20567/kotlin-interview-questions
 
 /*By default classes are final in Kotlin.

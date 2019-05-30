@@ -1,4 +1,4 @@
-package andorid.sample.practice_2019mar.ArchComponent.JetPack.View;
+package andorid.sample.practice_2019mar.designPatterns.Demo.mvvm.View;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;

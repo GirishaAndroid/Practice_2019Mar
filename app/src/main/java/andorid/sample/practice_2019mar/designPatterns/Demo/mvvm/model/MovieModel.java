@@ -1,4 +1,4 @@
-package andorid.sample.practice_2019mar.ArchComponent.JetPack.Model;
+package andorid.sample.practice_2019mar.designPatterns.Demo.mvvm.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
